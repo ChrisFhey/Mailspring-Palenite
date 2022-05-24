@@ -1,13 +1,12 @@
 {
-  "name": "theme-starter",
-  "title": "Starter Theme",
-  "displayName": "Starter Theme",
+  "name": "mailspring-palenite",
+  "title": "Mailspring Palenite",
+  "displayName": "Mailspring Palenite",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "A great dark theme to start your own themes.",
+  "description": "A Mailspring theme based on the VSCode Palenite theme",
   "license": "MIT",
   "engines": {
     "mailspring": "*"
   }
 }
-
