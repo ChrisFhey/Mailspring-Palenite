@@ -10,6 +10,10 @@
         color: @text-color;
     }
 
+    &.unread {
+        color: white;
+    }
+
     &.focused {
         color: #fff;
 
@@ -17,4 +21,8 @@
             background-color: @accent-primary;
         }
     }
+}
+
+.menu .item:not(.active):not(.selected):hover {
+    background-color: @list-hover-bg;
 }
