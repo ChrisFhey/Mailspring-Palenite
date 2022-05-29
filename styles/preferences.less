@@ -1,0 +1,23 @@
+.preferences-wrap {
+    .platform-note {
+        border-left: 3px solid @accent-primary;
+
+        &::before {
+            color: @accent-primary;
+        }
+    }
+
+    input[type=checkbox]:checked {
+        accent-color: @accent-primary;
+    }
+
+    .container-preference-tabs .preferences-tabs .item.active {
+        border-bottom: 3px solid @accent-primary;
+        background-color: @background-primary;
+        box-shadow: none;
+    }
+
+    select > option:checked {
+        background: #000 !important;
+    }
+}
