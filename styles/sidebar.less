@@ -1,13 +1,16 @@
 .account-sidebar-sections{
     .outline-view .item {
         color: @text-color-sidebar;     
-        &.selected {
-            color: #fff;
-        }
+        padding-left: 10px;
 
         &:hover {
             background-color: #252838;
             color: #fff;
+        }
+
+        &.selected {
+            color: #fff;
+            background-color: @accent-primary;
         }
     }
 

@@ -1,13 +1,23 @@
 .thread-search-bar {
-    background-color: #31384f;
-    
     .tokenizing-contenteditable .layer-text{
-        color: #fff;
-        caret-color: #fff;
+        color: @search-bar-text;
+        caret-color: @search-bar-text;
     }
 
     .suggestions {
-        background-color: #31384f;
-        color: #fff !important;
+        background-color: @search-bar-background;
+        color: @search-bar-text !important;
+
+        .suggestion {
+            color: @search-bar-text;
+        }
+    }
+}
+
+.fixed-popover {
+    input.search {
+        background-color: @search-bar-background !important;
+        color: @search-bar-text !important;
+        border: @search-bar-border !important;
     }
 }
