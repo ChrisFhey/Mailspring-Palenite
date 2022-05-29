@@ -1,9 +1,10 @@
 .thread-list .list-item{
     background-color:@background-primary;
+    border-bottom: none !important;
 
     &:hover {
         background-color: #252838;
-        color: #fff !important;
+        color: @text-color-inverse !important;
     }
 
     &:not(.unread):not(.selected):not(.focused) {
@@ -11,14 +12,19 @@
     }
 
     &.unread {
-        color: white;
+        color: @text-color-inverse;
     }
-
     &.focused {
-        color: #fff;
+        color: @text-color-inverse;
 
         &:hover {
             background-color: @accent-primary;
+        }
+    }
+
+    .list-column.list-column-HoverActions {
+        .inner {
+            background-image: linear-gradient(to right, rgba(38, 38, 38, 0) 0%, @background-dark 50%, @background-dark 100%);
         }
     }
 }
