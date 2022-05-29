@@ -54,3 +54,19 @@ img.content-light {
   box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
     0 1px 1.5px rgba(255, 255, 255, 0.08);
 }
+
+.scrollbar-track {
+  background-color: @background-primary;
+  border-left: 1px solid #282b3d;
+  .scrollbar-handle {
+    background-color: #694CA4CC;
+    border: 1px solid #694CA4CC;
+  }
+
+  &.dragging {
+    .scrollbar-handle {
+      background-color: #694CA4CC;
+      border: 1px solid #694CA4CC;
+    }
+  }
+}
