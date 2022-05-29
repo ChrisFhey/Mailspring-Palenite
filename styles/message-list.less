@@ -1,0 +1,20 @@
+.thread-list .list-item{
+    background-color:@background-primary;
+
+    &:hover {
+        background-color: #252838;
+        color: #fff !important;
+    }
+
+    &:not(.unread):not(.selected):not(.focused) {
+        color: @text-color;
+    }
+
+    &.focused {
+        color: #fff;
+
+        &:hover {
+            background-color: @accent-primary;
+        }
+    }
+}
