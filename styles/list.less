@@ -34,3 +34,24 @@
 .menu .item:not(.active):not(.selected):hover {
     background-color: @list-hover-bg;
 }
+
+body.is-blurred {
+    .thread-list .list-item{
+        &.focused {
+            background: fade(@accent-primary, 70%);
+            color: @text-color-inverse;
+        }
+    }
+}
+
+
+.composer-action-bar-wrap, .composer-content-wrap{
+    .inner {
+        &.display-deferrable {
+            background-color: @background-primary !important;
+        }
+
+    }
+
+    background-color: @background-primary !important;
+}
