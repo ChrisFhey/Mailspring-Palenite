@@ -2,7 +2,7 @@
 
 The Mailspring Palenite theme is based on the Visual Studio Code Palenite theme.
 
-![Mailspring Palenite](screenshot/custom-theme.png "Palenite")
+![Mailspring Palenite](screenshot/mailspring.png "Palenite")
 
 ## Installation
 
