@@ -56,16 +56,27 @@ body.is-blurred {
 }
 
 .message-item-wrap {
-    &.before-reply-area {
+    &:not(.collapsed) {
+        margin-left: 19px !important;
         border-radius: 0;
         border-left: 1px solid #41434f !important;
     }
 }
 
+.scroll-region-content-inner > .message-item-wrap {
+    margin-top: 0px !important;
+}
+
+.scroll-region-content-inner > .message-item-wrap ~ .message-item-wrap {
+    &:not(.collapsed) {
+        margin-top: 20px !important;
+    }
+}
+
 .footer-reply-area-wrap {
+    margin-left: 19px !important;
     box-shadow: none !important;
     border-left: 1px solid #41434f !important;
-    // border-top: none !important;
     border-radius: 0 !important;
 }
 
