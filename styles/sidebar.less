@@ -1,0 +1,28 @@
+@import "ui-variables";
+
+.account-sidebar-sections{
+    .outline-view .item {
+        color: @text-color-sidebar;     
+        padding-left: 10px;
+
+        &:hover {
+            background-color: #252838;
+            color: #fff;
+        }
+
+        &.selected {
+            color: #fff;
+            background-color: @accent-primary;
+        }
+    }
+
+    .heading {
+        font-weight: bold;
+        color: @text-color-heading;
+        text-transform: uppercase;
+    }
+
+    .icon img.content-mask{
+        background-color: @accent-primary;
+    }
+}

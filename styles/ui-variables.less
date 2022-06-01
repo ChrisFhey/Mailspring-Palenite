@@ -12,41 +12,62 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @gray-lighter: darken(@gray-base, 92.5%);
 @white: #0a0a0a;
 
-@accent-primary: #58b660;
-@accent-primary-dark: darken(@accent-primary, 10%);
+@accent-primary: #7d58bf;
+@accent-primary-dark: @accent-primary;
 
-@background-primary: #212121;
-@background-off-primary: #212121;
-@background-secondary: #121212;
+@background-primary: #292d3e;
+@background-off-primary: #292d3e;
+@background-secondary: #292d3e;
 @background-tertiary: #6d7987;
+@background-dark: #252838;
+@background-hover: @background-dark;
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
 @border-color-tertiary: lighten(@background-tertiary, 10%);
-@border-color-divider: @border-color-secondary;
+@border-color-divider: #282b3d;
 
-@text-color: #eee;
+@text-color: #bfc7d4;
+@text-color-sidebar: #6c7298;
 @text-color-subtle: fadeout(@text-color, 20%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
 @text-color-inverse: white;
 @text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
 @text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
-@text-color-heading: #fff;
+@text-color-heading: white;
+@text-color-hover: white;
 
 @text-color-link: @accent-primary;
 @text-color-link-hover: @accent-primary-dark;
 @text-color-link-active: @accent-primary-dark;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
-@dropdown-default-bg-color: #404040;
+@dropdown-default-bg-color: @background-primary;
 
-@input-bg: #2e2e2e;
+@input-bg: #31384f;
 @input-border: @border-color-divider;
 
 @list-bg: #333;
 @list-border: #383838;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color;
+@list-hover-bg: @background-hover;
 
-@toolbar-background-color: #121212;
-@panel-background-color: #121212;
+@toolbar-background-color: #292d3e;
+@panel-background-color: #292d3e;
+
+//== Account Sidebar
+@source-list-bg: @panel-background-color;
+@source-list-active-bg: @component-active-color;
+@source-list-active-color: @text-color-heading;
+
+@search-bar-background: #31384f;
+@search-bar-border: 1px solid #7e57c2;
+@search-bar-text: white;
+
+@button-background: #7e57c2;
+@button-border: 1px solid #282B3C;
+@button-text-color: white;
+@button-hover-bg: @background-hover;
+
+@file-info-border: 1px solid #7d58bf;

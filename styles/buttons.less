@@ -1,0 +1,33 @@
+@import "ui-variables";
+
+.button-dropdown {
+    .primary-item, .secondary-picker {
+        background: @button-background !important;
+        color: #fff;
+        border: 1px solid #282B3C !important;
+
+        &:hover {
+            background: @button-background;
+        }
+    }
+
+    .secondary-items .menu .item:hover {
+        color: @text-color-hover;
+    }
+}
+
+.btn {
+    &.btn-emphasis {
+        background: @button-background !important;
+        border: @button-border !important;
+        color: @button-text-color;
+    }
+
+    &.btn-toolbar {
+        background: @background-primary;
+        box-shadow: none;
+        &:hover {
+            background: @button-hover-bg;
+        }
+    }
+} 
