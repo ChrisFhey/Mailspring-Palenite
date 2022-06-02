@@ -3,7 +3,7 @@
   "title": "Mailspring Palenite",
   "displayName": "Palenite",
   "theme": "ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Mailspring theme based on the VSCode Palenite theme",
   "license": "MIT",
   "engines": {
