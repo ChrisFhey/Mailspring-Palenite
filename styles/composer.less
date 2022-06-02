@@ -48,3 +48,36 @@
         }
     }
 }
+
+// Windows specific fixes
+body.platform-win32 {
+    .message-actions-wrap {
+        .button-dropdown {
+            .primary-item, .secondary-picker {
+                border: 0 !important;
+            }
+        }
+    }
+
+    .button-dropdown.btn-emphasis {
+        .primary-item, .secondary-picker {
+            box-shadow: none !important;
+            border: 0 !important;
+        }
+    }
+
+    .composer-header {
+        .token {
+            background: @background-primary;
+
+            &.selected {
+                box-shadow: none;
+                background: @accent-primary;
+            }
+
+            &:hover:not(.selected){
+                background: @background-hover;
+            }
+        }
+    }
+}
