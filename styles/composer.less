@@ -49,6 +49,45 @@
     }
 }
 
+.composer-action-bar-wrap, .composer-content-wrap{
+    .inner {
+        &.display-deferrable {
+            background-color: @background-primary !important;
+        }
+    }
+
+    background-color: @background-primary !important;
+}
+
+.message-item-wrap {
+    &:not(.collapsed) {
+        margin-left: 19px !important;
+        border-radius: 0;
+        border-left: 1px solid #41434f !important;
+    }
+}
+
+.scroll-region-content-inner > .message-item-wrap {
+    margin-top: 0px !important;
+}
+
+.scroll-region-content-inner > .message-item-wrap ~ .message-item-wrap {
+    &:not(.collapsed) {
+        margin-top: 20px !important;
+    }
+}
+
+.footer-reply-area-wrap {
+    margin-left: 19px !important;
+    box-shadow: none !important;
+    border-left: 1px solid #41434f !important;
+    border-radius: 0 !important;
+}
+
+.message-item-white-wrap {
+    box-shadow: none !important;
+}
+
 // Windows specific fixes
 body.platform-win32 {
     .message-actions-wrap {
