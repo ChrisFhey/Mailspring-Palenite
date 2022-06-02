@@ -26,3 +26,97 @@
     border: @file-info-border !important;
     border-left: 0px !important;
 }
+
+.composer-participant-field {
+    &.from-field {
+        .open {
+            .only-item {
+                box-shadow: none !important;
+                background: @accent-primary !important;
+                &:hover {
+                    background: @accent-primary !important;
+                }
+            }
+        }
+
+        :not(.open) {
+            .only-item {
+                &:hover:not(.selected){
+                    background: @background-hover !important;
+                }
+            }
+        }
+    }
+}
+
+.composer-action-bar-wrap, .composer-content-wrap{
+    .inner {
+        &.display-deferrable {
+            background-color: @background-primary !important;
+        }
+    }
+
+    background-color: @background-primary !important;
+}
+
+.message-item-wrap {
+    &:not(.collapsed) {
+        margin-left: 19px !important;
+        border-radius: 0;
+        border-left: 1px solid #41434f !important;
+    }
+}
+
+.scroll-region-content-inner > .message-item-wrap {
+    margin-top: 0px !important;
+}
+
+.scroll-region-content-inner > .message-item-wrap ~ .message-item-wrap {
+    &:not(.collapsed) {
+        margin-top: 20px !important;
+    }
+}
+
+.footer-reply-area-wrap {
+    margin-left: 19px !important;
+    box-shadow: none !important;
+    border-left: 1px solid #41434f !important;
+    border-radius: 0 !important;
+}
+
+.message-item-white-wrap {
+    box-shadow: none !important;
+}
+
+// Windows specific fixes
+body.platform-win32 {
+    .message-actions-wrap {
+        .button-dropdown {
+            .primary-item, .secondary-picker {
+                border: 0 !important;
+            }
+        }
+    }
+
+    .button-dropdown.btn-emphasis {
+        .primary-item, .secondary-picker {
+            box-shadow: none !important;
+            border: 0 !important;
+        }
+    }
+
+    .composer-header {
+        .token {
+            background: @background-primary;
+
+            &.selected {
+                box-shadow: none;
+                background: @accent-primary;
+            }
+
+            &:hover:not(.selected){
+                background: @background-hover;
+            }
+        }
+    }
+}
