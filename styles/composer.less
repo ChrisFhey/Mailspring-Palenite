@@ -26,3 +26,25 @@
     border: @file-info-border !important;
     border-left: 0px !important;
 }
+
+.composer-participant-field {
+    &.from-field {
+        .open {
+            .only-item {
+                box-shadow: none !important;
+                background: @accent-primary !important;
+                &:hover {
+                    background: @accent-primary !important;
+                }
+            }
+        }
+
+        :not(.open) {
+            .only-item {
+                &:hover:not(.selected){
+                    background: @background-hover !important;
+                }
+            }
+        }
+    }
+}
